@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-m3u8-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8095268426:AAEPH2gdZ37dQnaRKy_YYmWf2NHDNiji60w
